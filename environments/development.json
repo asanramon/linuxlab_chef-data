@@ -1,0 +1,16 @@
+{
+  "name": "linuxlab_development",
+  "description": "Development environment for the linuxlab systems.",
+  "cookbook_versions": {
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+	"ntp_servers": [
+		"ntpd.linuxlab.asrnet.com"
+	],
+	"repo_server": "repo.linuxlab.asrnet.com"
+  },
+  "override_attributes": {
+  }
+}

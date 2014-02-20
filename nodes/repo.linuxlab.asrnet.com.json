@@ -1,0 +1,13 @@
+{
+  "name": "repo.linuxlab.asrnet.com",
+  "chef_environment": "linuxlab_development",
+  "run_list": [
+    "role[linuxlab_base]",
+	"role[linuxlab_repo]"
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

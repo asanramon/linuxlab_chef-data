@@ -1,0 +1,6 @@
+{
+	"id": "nagios",
+	"hostname": "nagios.linuxlab.asrnet.com",
+	"mac_address": "00:50:56:95:07:0B",
+	"ip_address": "10.10.2.12"
+}

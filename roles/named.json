@@ -1,0 +1,24 @@
+{
+  "name": "linuxlab_named",
+  "description": "DNS server role for the Linux machines on linuxlab domain.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+	"iptables_open_ports": {
+		"tcp": [
+			"53"
+		],
+		"udp": [
+			"53"
+		]
+	}
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+	"recipe[base]",
+	"recipe[named]"
+  ],
+  "env_run_lists": {
+  }
+}

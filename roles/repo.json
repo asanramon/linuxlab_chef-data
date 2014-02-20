@@ -1,0 +1,24 @@
+{
+  "name": "linuxlab_repo",
+  "description": "Mirror repository server role for the Linux machines on linuxlab domain.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+	"iptables_open_ports": {
+		"tcp": [
+			"80",
+			"443"
+		],
+		"udp": [
+		]
+	}
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+	"recipe[base]",
+	"recipe[repo]"
+  ],
+  "env_run_lists": {
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "linuxlab_dhcpd",
+  "description": "DHCP server role for the Linux machines on linuxlab domain.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+	"recipe[base]",
+	"recipe[dhcpd]"
+  ],
+  "env_run_lists": {
+  }
+}

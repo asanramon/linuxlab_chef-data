@@ -1,0 +1,6 @@
+{
+	"id": "ntpd",
+	"hostname": "ntpd.linuxlab.asrnet.com",
+	"mac_address": "00:50:56:95:07:1F",
+	"ip_address": "10.10.2.17"
+}
