@@ -1,6 +1,6 @@
 {
-  "name": "linuxlab_dhcpd",
-  "description": "DHCP server role for the Linux machines on linuxlab domain.",
+  "name": "linuxlab_cobbler",
+  "description": "Cobbler role for the Linux machines on linuxlab domain.",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -8,8 +8,8 @@
   },
   "chef_type": "role",
   "run_list": [
-    "role[linuxlab_base]",
-	"recipe[dhcpd]"
+	"role[linuxlab_base]",
+	"recipe[cobbler]"
   ],
   "env_run_lists": {
   }

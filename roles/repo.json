@@ -16,7 +16,7 @@
   },
   "chef_type": "role",
   "run_list": [
-	"recipe[base]",
+    "role[linuxlab_base]",
 	"recipe[repo]"
   ],
   "env_run_lists": {
