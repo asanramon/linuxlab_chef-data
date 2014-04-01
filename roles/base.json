@@ -3,6 +3,7 @@
   "description": "Base role for the Linux machines on linuxlab domain.",
   "json_class": "Chef::Role",
   "default_attributes": {
+	"auto_logoff_timer": "600",
 	"iptables_open_ports": {
 		"tcp": [
 			"22"

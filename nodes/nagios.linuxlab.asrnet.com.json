@@ -1,0 +1,13 @@
+{
+  "name": "nagios.linuxlab.asrnet.com",
+  "chef_environment": "linuxlab_development",
+  "run_list": [
+    "role[linuxlab_nagios]",
+	"recipe[base::reboot]"
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

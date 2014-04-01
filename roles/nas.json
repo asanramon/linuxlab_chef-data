@@ -1,0 +1,17 @@
+{
+  "name": "linuxlab_nas",
+  "description": "NAS server role for the Linux machines on linuxlab domain.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+  	"role[linuxlab_base]",
+	"recipe[nfsd]",
+	"recipe[smbd]"
+  ],
+  "env_run_lists": {
+  }
+}

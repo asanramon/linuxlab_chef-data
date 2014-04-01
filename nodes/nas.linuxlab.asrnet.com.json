@@ -1,0 +1,13 @@
+{
+  "name": "nas.linuxlab.asrnet.com",
+  "chef_environment": "linuxlab_development",
+  "run_list": [
+    "role[linuxlab_nfsd]",
+	"role[linuxlab_smbd]"
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

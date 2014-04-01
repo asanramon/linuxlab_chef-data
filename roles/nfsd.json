@@ -1,34 +1,18 @@
 {
-  "name": "linuxlab_router",
-  "description": "Router role for the Linux machines on linuxlab domain.",
+  "name": "linuxlab_nfsd",
+  "description": "NFS server role for the Linux machines on linuxlab domain.",
   "json_class": "Chef::Role",
   "default_attributes": {
-	"iptables_allowed_subnets": [
-		"10.10.1.0/24",
-		"10.10.2.0/24",
-		"10.10.3.0/24",
-		"10.10.4.0/24"
-	],
 	"iptables_open_ports": {
 		"tcp": [
-			"22",
-			"53",
-			"69",
-			"80",
 			"111",
-			"443",
 			"662",
 			"875",
 			"892",
 			"2049",
-			"3306",
-			"4000",
-			"9462",
 			"32803"
 		],
 		"udp": [
-			"53",
-			"69",
 			"111",
 			"662",
 			"875",
@@ -42,8 +26,8 @@
   },
   "chef_type": "role",
   "run_list": [
-  	"recipe[base]",
-	"recipe[router]"
+  	"role[linuxlab_base]",
+	"recipe[nfsd]"
   ],
   "env_run_lists": {
   }

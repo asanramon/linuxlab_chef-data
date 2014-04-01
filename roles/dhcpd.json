@@ -3,6 +3,7 @@
   "description": "DHCP server role for the Linux machines on linuxlab domain.",
   "json_class": "Chef::Role",
   "default_attributes": {
+	"cobbler_server": "10.10.2.11"
   },
   "override_attributes": {
   },

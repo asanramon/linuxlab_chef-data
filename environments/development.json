@@ -9,7 +9,8 @@
 	"ntp_servers": [
 		"ntpd.linuxlab.asrnet.com"
 	],
-	"repo_server": "repo.linuxlab.asrnet.com"
+	"repo_server": "repo.linuxlab.asrnet.com",
+	"pxe_server": "pxe.linuxlab.asrnet.com"
   },
   "override_attributes": {
   }

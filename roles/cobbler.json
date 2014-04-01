@@ -3,9 +3,18 @@
   "description": "Cobbler role for the Linux machines on linuxlab domain.",
   "json_class": "Chef::Role",
   "default_attributes": {
+ 	"iptables_open_ports": {
+		"tcp": [
+			"69",
+			"80"
+		],
+		"udp": [
+			"69"
+		]
+	}
   },
   "override_attributes": {
-  },
+ },
   "chef_type": "role",
   "run_list": [
 	"role[linuxlab_base]",

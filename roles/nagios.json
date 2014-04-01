@@ -1,0 +1,16 @@
+{
+  "name": "linuxlab_nagios",
+  "description": "nagios server role for the Linux machines on linuxlab domain.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+  	"role[linuxlab_base]",
+	"recipe[nagios]"
+  ],
+  "env_run_lists": {
+  }
+}
